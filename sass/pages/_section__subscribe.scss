@@ -1,0 +1,12 @@
+.section__subscribe {
+  margin-inline: auto;
+  text-align: center;
+
+  &--heading {
+    margin-block-end: 15px;
+    & span {
+      color: var(--blue-dark);
+      font-weight: 700;
+    }
+  }
+}
