@@ -13,4 +13,15 @@
   &--text {
     margin-block-end: 32px;
   }
+
+  &--input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 28px;
+    border: 1px solid var(--blue-light);
+    color: var(--blue);
+    padding-block: var(--10px);
+    padding-inline-start: var(--32px);
+    margin-block-end: var(--10px);
+  }
 }
