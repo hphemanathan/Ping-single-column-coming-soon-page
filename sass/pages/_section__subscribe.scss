@@ -14,14 +14,15 @@
     margin-block-end: 32px;
   }
 
-  &--input {
-    display: inline-block;
-    width: 100%;
-    border-radius: 28px;
-    border: 1px solid var(--blue-light);
-    color: var(--blue);
-    padding-block: var(--10px);
-    padding-inline-start: var(--32px);
-    margin-block-end: var(--10px);
+  &__input {
+    padding-inline: var(--15px);
+    &--box {
+      width: 100%;
+      border: 1px solid var(--blue);
+      border-radius: var(--28);
+      &:focus {
+        border: 1px solid pink;
+      }
+    }
   }
 }
