@@ -1,10 +1,11 @@
 .btn {
-  display: inline-block;
-  padding-inline: 112px;
+  //   display: inline-block;
+  padding-inline: var(--112px);
+  padding-block: var(--12px);
   background-color: var(--blue);
-  padding-block: var(--mar-bk-1);
+  width: 90%;
   text-align: center;
-  margin-inline: auto;
+
   border-radius: 1.8125rem;
   text-decoration: none;
   color: var(--clr-white);
