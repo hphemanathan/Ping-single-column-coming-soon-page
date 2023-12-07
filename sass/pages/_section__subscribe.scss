@@ -16,12 +16,16 @@
 
   &__input {
     padding-inline: var(--15px);
+    margin-block-end: var(--10px);
     &--box {
       width: 100%;
       border: 1px solid var(--blue);
       border-radius: var(--28);
+      transition: all 0.2s;
+      padding-block: var(--10px);
+      padding-inline-start: var(--32px);
       &:focus {
-        border: 1px solid pink;
+        outline: 1px solid var(--blue);
       }
     }
   }

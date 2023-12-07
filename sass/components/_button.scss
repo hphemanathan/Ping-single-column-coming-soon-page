@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  padding-inline: 112px;
+  background-color: var(--blue);
+  padding-block: var(--mar-bk-1);
+  text-align: center;
+  margin-inline: auto;
+  border-radius: 1.8125rem;
+  text-decoration: none;
+  color: var(--clr-white);
+  font-weight: var(--f-w-b);
+}
+
+.section__hero_btn--down {
+  background-color: var(--clr-green);
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #71c0d4;
+  }
+}
