@@ -19,11 +19,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin-inline: auto;
     }
 
-    padding-inline: var(--15px);
-
-    width: 100%;
     &--box {
       margin-block-end: var(--10px);
       width: 90%;
