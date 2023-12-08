@@ -1,6 +1,6 @@
 .btn {
   //   display: inline-block;
-  padding-inline: var(--112px);
+  // padding-inline: var(--112px);
   padding-block: var(--12px);
   background-color: var(--blue);
   width: 90%;
@@ -10,11 +10,7 @@
   text-decoration: none;
   color: var(--clr-white);
   font-weight: var(--f-w-b);
-}
-
-.section__hero_btn--down {
-  background-color: var(--clr-green);
-  text-align: center;
+  margin-block-end: var(--72);
 
   &:hover,
   &:active,
