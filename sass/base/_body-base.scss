@@ -2,4 +2,6 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-s-body);
   color: var(--blue-dark);
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,21 @@
+.footer {
+  margin-top: auto;
+  margin-inline: auto;
+  text-align: center;
+
+  &__icon {
+    margin-block-end: var(--27px);
+    display: flex;
+    justify-content: center;
+    gap: var(--12px);
+
+    & > * {
+      fill: var(--blue);
+      border: 0.918px solid var(--blue-light);
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      padding: var(--12px);
+    }
+  }
+}
