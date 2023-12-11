@@ -11,9 +11,14 @@
   font-weight: 600px;
   box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
 
+  @include tab {
+    border-radius: 5rem;
+  }
+
   &:hover,
   &:active,
   &:focus {
-    background-color: #71c0d4;
+    cursor: pointer;
+    outline: 1px solid var(--blue);
   }
 }

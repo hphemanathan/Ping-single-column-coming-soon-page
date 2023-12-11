@@ -17,6 +17,14 @@
       height: 20px;
       border-radius: 50%;
       padding: var(--8px);
+
+      &:hover,
+      &:active,
+      &:focus {
+        cursor: pointer;
+        fill: var(--white);
+        background-color: var(--blue);
+      }
     }
   }
 

@@ -1,6 +1,9 @@
 .section__subscribe {
   margin-inline: auto;
   text-align: center;
+  @include tab {
+    margin-block-end: var(--80px);
+  }
 
   &--heading {
     margin-block-end: 15px;
@@ -12,6 +15,9 @@
 
   &--text {
     margin-block-end: 32px;
+    @include tab {
+      margin-block-end: 40px;
+    }
   }
 
   &__input {
@@ -26,6 +32,7 @@
 
       @include tab {
         grid-template-columns: 2fr 1fr;
+        margin-block-end: var(--94px);
       }
     }
 
