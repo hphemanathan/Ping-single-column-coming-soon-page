@@ -23,16 +23,19 @@
   &__input {
     &--wrapper {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "input button"
+        "error error";
       justify-items: center;
       align-items: center;
       width: 90%;
       margin-inline: auto;
-      margin-block-end: var(--72);
+      // margin-block-end: var(--72);
 
       @include tab {
         grid-template-columns: 2fr 1fr;
-        margin-block-end: var(--94px);
       }
     }
 
@@ -54,8 +57,27 @@
       }
     }
   }
+  section__subscribe__button &--response {
+    position: sticky;
+  }
+
+  // &--response.hidden {
+  //   display: contents;
+  // }
+
+  .resonponse--box {
+    margin-block-end: var(--72);
+  }
 
   &--img {
     margin-bottom: var(--120px);
   }
+}
+
+.section__subscribe__button {
+  grid-area: button;
+}
+
+.section__subscribe--response {
+  grid-area: error;
 }

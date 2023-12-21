@@ -1,6 +1,6 @@
 const button = document.querySelector(`.btn`);
 const email = document.querySelector('input');
-const response = document.querySelector(".response")
+const response = document.querySelector(".section__subscribe--response");
 const input = document.querySelector('[name="email-address"]');
 // response.textContent = 'Please provide a valid email address'
 
@@ -12,6 +12,7 @@ function click (event) {
 
     if (!emailid.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
       response.textContent = "Please provide a valid email address";
+      // response.classList.add("hidden");
     } else {
       console.log("thanks");
     }
@@ -19,7 +20,7 @@ function click (event) {
 
 button.addEventListener(`click`, click);
 input.addEventListener('click', function clear () {
-  response.textContent = null;
+    response.textContent='';
 })
 
 
