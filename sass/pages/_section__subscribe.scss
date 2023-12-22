@@ -1,9 +1,6 @@
 .section__subscribe {
   margin-inline: auto;
   text-align: center;
-  @include tab {
-    margin-block-end: var(--80px);
-  }
 
   &--heading {
     margin-block-end: 15px;
@@ -15,24 +12,18 @@
 
   &--text {
     margin-block-end: 32px;
-    @include tab {
-      margin-block-end: 40px;
-    }
   }
 
   &__input {
     &--wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "input button"
-        "error error";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 40px 1fr;
       justify-items: center;
       align-items: center;
       width: 90%;
       margin-inline: auto;
-      // margin-block-end: var(--72);
+      margin-block-end: var(--72);
 
       @include tab {
         grid-template-columns: 2fr 1fr;
@@ -40,7 +31,6 @@
     }
 
     &--box {
-      margin-block-end: var(--10px);
       width: 90%;
       border: 1px solid var(--blue);
       border-radius: var(--28);
@@ -57,27 +47,15 @@
       }
     }
   }
-  section__subscribe__button &--response {
-    position: sticky;
-  }
 
-  // &--response.hidden {
-  //   display: contents;
-  // }
-
-  .resonponse--box {
-    margin-block-end: var(--72);
+  &--response {
+    align-self: self-start;
+    font-size: 0.625rem;
+    color: var(--red-text);
+    font-style: italic;
   }
 
   &--img {
     margin-bottom: var(--120px);
   }
-}
-
-.section__subscribe__button {
-  grid-area: button;
-}
-
-.section__subscribe--response {
-  grid-area: error;
 }
