@@ -12,27 +12,29 @@ function click (event) {
     event.preventDefault();
 
      if(emailid.length===0) {
-      console.log('enter email id');
+     response.textContent = "Email address cannot be blank!";
+     inputBox.classList.add("error");
+     inputBox.classList.remove("success");
+     response.classList.remove("success");
 
      }else if(!emailid.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
       response.textContent = "Please provide a valid email address";
       inputBox.classList.add("error");
-    }else {
+      inputBox.classList.remove("success");
+      response.classList.remove("success");
+      
 
+    }else {
       response.textContent = "you have sucessfully subscribed, Thanks you!";
       inputBox.classList.remove("error");
+      inputBox.classList.add("success");
+      response.classList.add("success");
+      console.log(emailid);
+
     }
     
   }
 
-
 button.addEventListener(`click`, click);
-// input.addEventListener('click', function clear () {
-//     response.textContent='';
-// })
 
 
-
-console.log ('script working');
-console.log (button);
-console.log (email.textContent);
