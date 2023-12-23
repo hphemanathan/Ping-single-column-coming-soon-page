@@ -1,4 +1,4 @@
-# Meet landing page solution
+# Ping coming soon page solution
 
 ## Table of contents
 
