@@ -8,7 +8,7 @@ const inputBox = document.querySelector(".section__subscribe__input--box");
 
 function click (event) {
 
-    const emailid = email.value
+    let emailid = email.value;
     event.preventDefault();
 
      if(emailid.length===0) {
@@ -29,8 +29,8 @@ function click (event) {
       inputBox.classList.remove("error");
       inputBox.classList.add("success");
       response.classList.add("success");
-      console.log(emailid);
-
+      input.value = '';
+      
     }
     
   }
